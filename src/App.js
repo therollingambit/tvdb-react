@@ -39,9 +39,14 @@ function App() {
     setSearchTerm(e.target.value);
   };
 
+  const homePage = () => {
+    getMovies(FEATURED_API);
+  }
+
   return (
     <>
       <header>
+        <h1 onClick={homePage} className='logo'>The<span>TV</span>DB</h1>
         <form onSubmit={handleSubmit}>
           <input
             className="search"

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -19,9 +20,20 @@ body {
 
 header {
   background-color:#373b69;
-  padding: 1rem;
+  padding: 1rem 2.3rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo span {
+  color: rgb(124, 123, 123);
 }
 
 .search {
